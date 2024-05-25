@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    width: 80%;
+    height: 95%;
+    background-color: rgb(255,250,250);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.box1 {
+    width: 40%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    background-image: url("./images/image1.jpg");
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.box2 {
+    width: 60%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left:40%;
+}
+.first-term {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 25px;
+}
+.first-term p {
+    margin: 0;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+}
+span{
+    color: rgb(200,8,21);
+}
+
+h1 {
+    font-family: "Khand", sans-serif;
+    font-weight: 200;
+    margin:50px 25px 0px 20px;
+    color:rgb(128,128,128) ; 
+    letter-spacing: 1px;
+}
+h2 {
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    margin:0px 25px 5px 20px;
+    letter-spacing: 16px;
+    font-size: 55px;
+}
+.sec-term {
+    margin: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; 
+    border-bottom: 1px solid black;
+}
+.sec-term p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color:rgb(128,128,128) ; 
+}
+.sec-term button {
+    padding: 12px 30px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: none;
+    color: rgb(200,8,21);
+}
+.third-term {
+    margin: 15px 25px;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing:1px;
+    font-family: "Poppins", sans-serif;
+}
+.four-term {
+    margin: 75px 25px 20px 20px;
+}
+.four-term p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Khand", sans-serif;
+    letter-spacing: 2px;
+
+}
+button:hover {
+    transform: scale(1.1);
+
+}
+@media screen and (max-width:520px) {
+    .container {
+        height: 100vh;
+        flex-direction: column;
+    }
+    .content {
+        width: 95%;
+        height: 100%;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .box1 {
+        width: 100%;
+    }
+    .box2 {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    .first-term {
+        margin: 20px 15px;
+    }
+    h1 {
+        margin:50px 15px 0px 15px;
+    }
+    h2 {
+        margin: 0 15px;
+        font-size: 35px;
+        letter-spacing: 8px;
+    }
+    .sec-term {
+        margin: 30px 15px 10px 15px;
+    }
+    .sec-term p{
+        font-size: 13px;
+        font-weight: 300;
+        color:rgb(128,128,128) ; 
+    }
+    .third-term{
+        margin: 50px 15px;
+    }
+    .four-term {
+        margin: 50px 15px 20px 15px;
+    }
+}

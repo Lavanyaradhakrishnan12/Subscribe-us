@@ -105,6 +105,42 @@ h2 {
     letter-spacing: 2px;
 
 }
+#subscribebox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
+    border-radius: 8px;
+    text-align: center;
+}
+#subscribebox button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#subscribebox h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#subscribebox p {
+    text-align: center;
+    color: rgb(200,8,21);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+
+}
+.hidden {
+    display: none;
+}
 button:hover {
     transform: scale(1.1);
 
@@ -139,8 +175,8 @@ button:hover {
     }
     h2 {
         margin: 0 15px;
-        font-size: 35px;
-        letter-spacing: 8px;
+        font-size: 30px;
+        letter-spacing: 10px;
     }
     .sec-term {
         margin: 30px 15px 10px 15px;
